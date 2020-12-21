@@ -1,0 +1,30 @@
+{
+  "name": "focus",
+  "version": "0.0.0",
+  "description": "Automates tasks that help you focus such as activating Do Not Disturb and updating your Slack status.",
+  "main": "index.js",
+  "bin": "./focus",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moderatemisbehaviour/focus.git"
+  },
+  "keywords": [
+    "focus",
+    "productivity",
+    "automation",
+    "pomodoro"
+  ],
+  "author": "Daniel Metcalfe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moderatemisbehaviour/focus/issues"
+  },
+  "homepage": "https://github.com/moderatemisbehaviour/focus#readme",
+  "dependencies": {
+    "@sindresorhus/do-not-disturb": "^1.1.0",
+    "axios": "^0.21.0"
+  }
+}
