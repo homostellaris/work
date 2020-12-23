@@ -1,14 +1,14 @@
 {
-  "name": "focus",
+  "name": "work",
   "version": "0.0.0",
   "description": "Automates tasks that help you focus such as activating Do Not Disturb and updating your Slack status.",
-  "bin": "./bin/focus",
+  "bin": "./bin/work",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moderatemisbehaviour/focus.git"
+    "url": "git+https://github.com/moderatemisbehaviour/work.git"
   },
   "keywords": [
     "focus",
@@ -19,9 +19,9 @@
   "author": "Daniel Metcalfe",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/moderatemisbehaviour/focus/issues"
+    "url": "https://github.com/moderatemisbehaviour/work/issues"
   },
-  "homepage": "https://github.com/moderatemisbehaviour/focus#readme",
+  "homepage": "https://github.com/moderatemisbehaviour/work#readme",
   "dependencies": {
     "@sindresorhus/do-not-disturb": "^1.1.0",
     "axios": "^0.21.0"
