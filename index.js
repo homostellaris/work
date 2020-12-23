@@ -1,10 +1,10 @@
 const axios = require('axios');
 const { exec } = require("child_process");
 const doNotDisturb = require('@sindresorhus/do-not-disturb');
-const Spotify = require('./spotify')
+const Spotify = require('./lib/spotify')
 
 process.on('unhandledRejection', error => {
-  console.log('unhandledRejection', error.message, error.stack);
+  console.log('Unhandled rejection:', error.message);
 });
 
 const subcommand = process.argv[2]

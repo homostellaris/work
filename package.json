@@ -2,7 +2,7 @@
   "name": "focus",
   "version": "0.0.0",
   "description": "Automates tasks that help you focus such as activating Do Not Disturb and updating your Slack status.",
-  "bin": "./focus",
+  "bin": "./bin/focus",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
