@@ -47,6 +47,9 @@ Don't forget to use the `-n` flag when base64 encoding the client credentials: `
 ## Get a RescueTime API key
 Create a new API key on [the RescueTime key management page](https://www.rescuetime.com/anapi/manage).
 
+## Add the command to your path
+Install the command globally with a package manager or run `npm link` from the root of the repo.
+
 # Using with PomoDoneApp
 This script works great with PomoDoneApp because it provides hooks to call AppleScripts which can in turn be used to call this script. It also provides an Android app that can show a notification with the remaining break timer that you set on your laptop so you can walk away from your desk with your phone knowing how much time is left on your break and also get another notification when it is up.
 
