@@ -1,14 +1,14 @@
-import $break from './lib/break.mjs' // The dollar sign is used to make explicit this is a variable rather than the 'break' keyword which is invalid as a variable name.
+import Break from './lib/Break.mjs'
 import day from './lib/day.mjs'
-import Focus from './lib/focus.cjs'
+import Focus from './lib/Focus.cjs'
 import rescuetime from './lib/rescuetime.cjs'
-import Spotify from './lib/spotify.cjs'
+import Spotify from './lib/Spotify.cjs'
 
 // process.on('unhandledRejection', error => {
 //   console.log('Unhandled rejection:', error.message);
 // });
 
-const [_, __, command, subcommand] = process.argv
+const [_, __, command, subcommand, ...args] = process.argv
 
 if (command === 'day') {
   if (subcommand === 'start') {
@@ -21,16 +21,21 @@ else if (command === 'focus') {
   const focus = new Focus(await Spotify.getInstance(), rescuetime)
 
   if (subcommand === 'start') {
-    await focus.start()
+    await focus.start(...args)
   } else if (subcommand === 'stop') {
     await focus.stop()
+  } else if (subcommand === 'pause') {
+    await focus.pause()
+  } else if (subcommand === 'resume') {
+    await focus.resume()
   }
 }
 else if (command === 'break') {
+  const $break = new Break(await Spotify.getInstance())
   if (subcommand === 'start') {
-    $break.start()
+    await $break.start()
   } else if (subcommand === 'stop') {
-    $break.stop()
+    await $break.stop()
   }
 }
 else {
