@@ -24,6 +24,7 @@
   "homepage": "https://github.com/moderatemisbehaviour/work#readme",
   "dependencies": {
     "@sindresorhus/do-not-disturb": "^1.1.0",
-    "axios": "^0.21.0"
+    "axios": "^0.21.0",
+    "open": "^7.3.0"
   }
 }
