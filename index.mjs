@@ -39,5 +39,5 @@ else if (command === 'break') {
   }
 }
 else {
-  throw new Error(`Unknown subcommand '${command}'`)
+  throw new Error(`Unknown command '${command}'`)
 }
