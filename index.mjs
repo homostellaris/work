@@ -21,7 +21,7 @@ else if (command === 'focus') {
   const focus = new Focus(await Spotify.getInstance(), rescuetime)
 
   if (subcommand === 'start') {
-    await focus.start(...args)
+    await focus.start(args)
   } else if (subcommand === 'stop') {
     await focus.stop()
   } else if (subcommand === 'pause') {
