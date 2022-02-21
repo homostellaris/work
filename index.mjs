@@ -28,6 +28,8 @@ else if (command === 'focus') {
     await focus.pause()
   } else if (subcommand === 'resume') {
     await focus.resume()
+  } else {
+    throw Error('No subcommand provided!')
   }
 }
 else if (command === 'break') {
